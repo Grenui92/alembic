@@ -4,7 +4,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey, TIMESTAMP
 from datetime import datetime
 
-engine = create_engine('postgresql+psycopg2://postgres:92062555Vv@localhost:5432/postgres')
+engine = create_engine('postgresql+psycopg2://postgres:12@localhost:5432/postgres')
 
 Session = sessionmaker(bind=engine)
 session = Session()
